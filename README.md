@@ -1,19 +1,6 @@
 # INTEGRANTES
 
-Daniel Santos Gomes
-RA: 2661940
-
-Gabriel Sumagawa 
-RA: 2477182
-
-Heloísa de Araujo Sousa
-RA: 2646009
-
-Lucas Kenzo Miyasato
-RA: 2374678
-
-Saullo Ribeiro Barbosa Santos
-RA: 2704976
+Gustavo Landim Dourado Ra:2473254
 
 # README — Desafio Analisador Léxico (Rastreio de Encomendas)
 
@@ -79,11 +66,3 @@ visualização etc.).
 - ✅ 4 casos válidos + 7 inválidos + 2 "léxico OK, regra de negócio recusa"
 - ✅ Bônus: pós-processamento (aba *Encomendas*), conversão de lexema em
   valor e mascaramento de dados pessoais (LGPD)
-
-## Pendências
-
-- A tabela de tokens documentada, o diário de ambiguidade, a tabela de
-  requisitos e o checklist de autoavaliação (exigidos por escrito no
-  enunciado) não estão mais no notebook e precisam ser reincluídos ou
-  entregues em separado antes da submissão final.
-- O campo "Integrantes", no topo da célula de introdução, segue em branco.
