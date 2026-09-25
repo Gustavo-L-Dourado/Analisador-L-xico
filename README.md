@@ -1,19 +1,6 @@
 # INTEGRANTES
 
-Daniel Santos Gomes
-RA: 2661940
-
-Gabriel Sumagawa 
-RA: 2477182
-
-Heloísa de Araujo Sousa
-RA: 2646009
-
-Lucas Kenzo Miyasato
-RA: 2374678
-
-Saullo Ribeiro Barbosa Santos
-RA: 2704976
+Gustavo Landim Dourado RA: 2473254
 
 # README — Desafio Analisador Léxico (Rastreio de Encomendas)
 
@@ -45,12 +32,6 @@ inclusive a instalação das dependências via `%pip install` no Google Colab.
 | 7 | Código | Laboratório de prioridade — reproduz ao vivo os conflitos léxicos |
 | 8 | Código | Interface ipywidgets (entrada, botão, texto colorido, tabela de tokens, abas) |
 
-> **Observação:** em relação à versão original entregue, esta cópia mantém
-> apenas a célula de introdução em Markdown; as seções explicativas em texto
-> (tabela de tokens documentada, diário de ambiguidade, tabela de requisitos
-> e checklist de autoavaliação) foram removidas do notebook. Todo o código é
-> idêntico ao da versão original e continua funcionando normalmente.
-
 ## Como executar
 
 1. **Google Colab:** *Arquivo → Fazer upload de notebook* → selecione o
@@ -79,11 +60,3 @@ visualização etc.).
 - ✅ 4 casos válidos + 7 inválidos + 2 "léxico OK, regra de negócio recusa"
 - ✅ Bônus: pós-processamento (aba *Encomendas*), conversão de lexema em
   valor e mascaramento de dados pessoais (LGPD)
-
-## Pendências
-
-- A tabela de tokens documentada, o diário de ambiguidade, a tabela de
-  requisitos e o checklist de autoavaliação (exigidos por escrito no
-  enunciado) não estão mais no notebook e precisam ser reincluídos ou
-  entregues em separado antes da submissão final.
-- O campo "Integrantes", no topo da célula de introdução, segue em branco.
