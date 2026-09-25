@@ -15,7 +15,7 @@ O notebook já vem com o código executado e sem erros, incluindo a instalação
 
 ## 📁 O que tem no código?
 
-O arquivo `.ipynb` possui 9 células que abrangem todo o funcionamento do analisador. De forma resumida, ele contém:
+O arquivo `.ipynb` possui células que abrangem todo o funcionamento do analisador. De forma resumida, ele contém:
 
 1. **Configuração:** Instalação de bibliotecas e utilitários visuais.
 2. **Gramática:** Definição de 23 tokens, palavras reservadas e expressões regulares (Regex).
