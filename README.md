@@ -1,68 +1,39 @@
-# INTEGRANTES
+# 📦 Analisador Léxico: Rastreio de Encomendas
 
-Gustavo Landim Dourado Ra:2473254
+**Autor:** Gustavo Landim Dourado (RA: 2473254)  
+*Projeto desenvolvido para o Desafio de Analisador Léxico (Tema: Correios e Mercado Livre).*
 
-# README — Desafio Analisador Léxico (Rastreio de Encomendas)
+---
 
-Este arquivo descreve o notebook **`Cópia_de_Desafio_Analisador_Lexico_Rastreio.ipynb`**,
-entregue como resposta ao Desafio da Seção 7 da Aula CP 05 (Prática 1) —
-"Meu Analisador Léxico de Mercado" (tema 2 — Rastreio de encomendas / Correios
-e Mercado Livre).
+## 🚀 O Projeto
 
-## O que é
+Este repositório contém um analisador léxico construído em **Python** usando a biblioteca **Lark**. Ele processa uma mini-linguagem criada para monitoramento de pacotes (a "RastreioLang") e conta com uma interface gráfica interativa feita com **ipywidgets**.
 
-Um analisador léxico completo, escrito em Python com a biblioteca **Lark**
-(`lexer="basic"`), para uma mini-linguagem de rastreio de encomendas
-("RastreioLang"), com interface interativa em **ipywidgets**.
+O notebook já vem com o código executado e sem erros, incluindo a instalação automática de dependências.
 
-O notebook já vem **executado** (saídas salvas), tendo rodado sem erros —
-inclusive a instalação das dependências via `%pip install` no Google Colab.
+---
 
-## Estrutura do notebook (9 células)
+## 📁 O que tem no código?
 
-| # | Tipo | Conteúdo |
-|---|------|----------|
-| 0 | Markdown | Apresentação do desafio, do tema e da mini-linguagem |
-| 1 | Código | Preparação do ambiente (instala `lark` e `ipywidgets`) |
-| 2 | Código | Ferramentas de visualização (tabela de tokens, texto colorido, erro com "setinha") |
-| 3 | Código | Gramática do lexer (23 tipos de token, com prioridades comentadas) |
-| 4 | Código | Tokenizador + dicas de erro específicas do domínio |
-| 5 | Código | Conversão de lexema em valor, mascaramento LGPD e pós-processamento (bônus) |
-| 6 | Código | Casos de teste automatizados (válidos e inválidos) |
-| 7 | Código | Laboratório de prioridade — reproduz ao vivo os conflitos léxicos |
-| 8 | Código | Interface ipywidgets (entrada, botão, texto colorido, tabela de tokens, abas) |
+O arquivo `.ipynb` possui 9 células que abrangem todo o funcionamento do analisador. De forma resumida, ele contém:
 
-> **Observação:** em relação à versão original entregue, esta cópia mantém
-> apenas a célula de introdução em Markdown; as seções explicativas em texto
-> (tabela de tokens documentada, diário de ambiguidade, tabela de requisitos
-> e checklist de autoavaliação) foram removidas do notebook. Todo o código é
-> idêntico ao da versão original e continua funcionando normalmente.
+1. **Configuração:** Instalação de bibliotecas e utilitários visuais.
+2. **Gramática:** Definição de 23 tokens, palavras reservadas e expressões regulares (Regex).
+3. **Tokenizador:** Motor de análise e tratamento inteligente de erros.
+4. **Testes:** Casos de uso automatizados (válidos e inválidos) e resolução de ambiguidades.
+5. **Interface:** Tela interativa para digitar, testar os códigos e ver a tabela de tokens.
 
-## Como executar
+---
 
-1. **Google Colab:** *Arquivo → Fazer upload de notebook* → selecione o
-   `.ipynb` → *Ambiente de execução → Executar tudo*.
-2. **VS Code / Jupyter local:**
+## ⚙️ Como Executar
+
+⚠️ **Atenção:** Rode as células obrigatoriamente em ordem (da primeira à última).
+
+**Opção A: No Google Colab (Mais fácil)**
+1. Faça o upload do arquivo `.ipynb` no Colab.
+2. No menu superior, clique em *Ambiente de execução → Executar tudo*.
+
+**Opção B: Localmente (VS Code / Jupyter)**
+1. Instale as dependências no terminal:
    ```bash
    pip install lark ipywidgets ipykernel
-   ```
-   Abra o `.ipynb`, escolha o interpretador Python e execute as células em
-   ordem (`Shift+Enter`).
-
-As células devem ser executadas **em ordem** (0 → 8): cada uma depende de
-funções/objetos definidos nas anteriores (gramática, tokenizador, funções de
-visualização etc.).
-
-## Requisitos do desafio atendidos pelo código
-
-- ✅ 23 tipos de token (mínimo exigido: 12)
-- ✅ 10 palavras reservadas + 2 grupos de reservadas, com `/i` e `\b`
-- ✅ 10 literais definidos por expressão regular
-- ✅ 3 conflitos de prioridade identificados e resolvidos (comentados na
-  célula 3 e demonstrados ao vivo na célula 7)
-- ✅ Comentários (`#`) e espaços ignorados via `%ignore`
-- ✅ Erros léxicos com linha, coluna e mais de 15 dicas específicas do domínio
-- ✅ Interface com entrada, botão, texto colorido e tabela de tokens
-- ✅ 4 casos válidos + 7 inválidos + 2 "léxico OK, regra de negócio recusa"
-- ✅ Bônus: pós-processamento (aba *Encomendas*), conversão de lexema em
-  valor e mascaramento de dados pessoais (LGPD)
